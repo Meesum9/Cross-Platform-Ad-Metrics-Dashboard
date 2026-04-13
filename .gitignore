@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+*.dbt
+dbt/.user.yml
+
+# Data files
+data/raw/*.csv
+data/staging/*.csv
+!data/raw/.gitkeep
+!data/staging/.gitkeep
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

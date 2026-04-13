@@ -1,0 +1,11 @@
+multi_channel_ad_analytics:
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: "your-project-id"  # Replace with your GCP project ID
+      dataset: analytics
+      threads: 4
+      timeout_seconds: 300
+      location: US
+  target: dev

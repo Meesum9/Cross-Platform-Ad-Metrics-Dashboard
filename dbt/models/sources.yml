@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: analytics
+    description: "Marketing analytics data in BigQuery"
+    tables:
+      - name: ads_combined
+        description: "Combined Facebook and Google Ads data"
+        columns:
+          - name: platform
+            description: "Advertising platform (facebook or google)"
+          - name: campaign_id
+            description: "Campaign identifier"
+          - name: ad_id
+            description: "Ad identifier"
+          - name: spend
+            description: "Amount spent on advertising"
+          - name: impressions
+            description: "Number of times ad was shown"
+          - name: clicks
+            description: "Number of clicks on ads"
+          - name: conversions
+            description: "Number of conversions"
+          - name: date
+            description: "Date of the campaign data"
